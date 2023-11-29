@@ -1,1 +1,10 @@
 https://edabit.com/challenge/3A3mHS5B3NNZddQL2
+
+def interview(lst, tot):
+    a = len(lst) == 8
+    b = all(True if i <= j else False for i, j in zip(lst, [5, 5, 10, 10, 15, 15, 20, 20]))
+    c = tot <= 120
+
+    if a and b and c:
+        return 'qualified'
+    return 'disqualified'
