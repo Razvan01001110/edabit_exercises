@@ -8,3 +8,12 @@ def interview(lst, tot):
     if a and b and c:
         return 'qualified'
     return 'disqualified'
+
+===
+
+https://edabit.com/challenge/MtktG9Dz7z9vBCFYM
+
+import socket
+
+def get_domain(ip_address):
+	return socket.gethostbyaddr(ip_address)[0]
